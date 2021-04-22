@@ -7,11 +7,13 @@ if ($_POST) {
     $brand = $_POST['brand'];
     $price = $_POST['price'];
     $description = $_POST['description'];
+
+
     $uploadError = '';
     //this function exists in the service file upload.
     $picture = file_upload($_FILES['picture']);//$Files is superglobals because the conntent file is more complex type,name, content.not only a string.
 
-    $sql = "INSERT INTO products (name, brand, price, description, picture) VALUES ('$name', '$brand', '$price', $description, '$picture->fileName')";
+    $sql = "INSERT INTO products (name, brand, price, description, picture) VALUES ('$name', '$brand', '$price', '$description', '$picture->fileName')";
 
     if ($connect->query($sql) === true) {
         $class = "success";

@@ -5,8 +5,8 @@ require_once  'file_upload.php';
 if ($_POST) {
     $name = $_POST['name'];
     $brand = $_POST['brand'];
-    $description = $_POST['description'];
     $price = $_POST['price'];
+    $description = $_POST['description'];
     $id = $_POST['id'];
     //variable for upload pictures errors is initialized
     $uploadError = '';

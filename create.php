@@ -32,7 +32,7 @@
 
                 <tr>
                     <th>Description</th>
-                    <td><input class='form-control' type="text" name="brand" placeholder="Description" /></ td>
+                    <td><input class='form-control' type="text" name="description" placeholder="Description" /></ td>
                 </tr>
 
                 <tr>
